@@ -1,5 +1,6 @@
 package com.example.grupp3musicplayer;
 
+import javafx.scene.control.Button;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,7 +17,8 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
-
+        Button play = new Button();
+        play.setWrapText(true);
         /* String path = getClass().getResource("/com/musik/Song.mp3").toExternalForm();
         Media media = new Media(path);
         MediaPlayer mediaplayer = new MediaPlayer(media);
