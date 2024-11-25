@@ -1,4 +1,4 @@
-package com.example.grupp3musicplayer.Classes;
+package com.example.grupp3musicplayer.Models;
 
 import java.util.ArrayList;
 

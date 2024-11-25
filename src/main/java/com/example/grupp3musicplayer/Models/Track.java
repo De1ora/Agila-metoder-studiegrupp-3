@@ -1,4 +1,4 @@
-package com.example.grupp3musicplayer.Classes;
+package com.example.grupp3musicplayer.Models;
 
 public class Track {
     private String title;
