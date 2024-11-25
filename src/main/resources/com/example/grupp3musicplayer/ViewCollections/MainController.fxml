@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="164.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grupp3musicplayer.MainController">
    <children>
-      <Slider layoutX="218.0" layoutY="117.0" prefHeight="14.0" prefWidth="111.0" />
+      <Slider fx:id="volumeSlider" layoutX="218.0" layoutY="117.0" prefHeight="14.0" prefWidth="111.0" />
       <HBox layoutX="33.0" layoutY="97.0" prefHeight="40.0" prefWidth="169.0">
          <children>
             <Button mnemonicParsing="false" onMouseClicked="#play" prefHeight="39.0" prefWidth="54.0" text="Play" />

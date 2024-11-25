@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
@@ -27,6 +28,22 @@ public class MainController {
 
     private MediaPlayer mediaPlayer;
 
+    @FXML
+    Slider volumeSlider;
+
+    @FXML
+    void initialize() {
+        volumeSlider.setValue(0.5);
+        volumeSlider.setMin(0);
+        volumeSlider.setMax(1);
+
+        volumeSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
+            if (mediaPlayer != null) {
+                mediaPlayer.setVolume(newValue.doubleValue());
+            }
+        });
+    }
+
         @FXML
         void chooseSong(MouseEvent event) {
             FileChooser chooser = new FileChooser();
@@ -36,6 +53,7 @@ public class MainController {
                 String selectedFile = file.toURI().toString();
                 Media media = new Media(selectedFile);
                 mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.setVolume(volumeSlider.getValue());
                 mediaPlayer.setOnReady(() -> chooseSong.setText(file.getName()));
             }
         }
