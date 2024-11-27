@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.grupp3musicplayer.Controllers.PlaylistController"
-            prefHeight="164.0" prefWidth="366.0">
+<?import javafx.scene.control.Slider?>
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/23.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grupp3musicplayer.Controllers.PlaylistController">
+   <children>
 
+      <Text fill="#047900" layoutX="203.0" layoutY="70.0" stroke="#6bae59" strokeType="OUTSIDE" strokeWidth="4.0" text="Playlist Menu">
+         <font>
+            <Font name="Nirmala UI Semilight" size="52.0" />
+         </font>
+      </Text>
+
+      <ListView fx:id="playlistView" layoutX="30.0" layoutY="100.0" prefHeight="467.0" prefWidth="217.0" style="-fx-background-color: black;" />
+      <TextField fx:id="playlistNameField" layoutX="280.0" layoutY="100.0" prefWidth="200.0" promptText="Enter Playlist Name" />
+      <Button layoutX="490.0" layoutY="100.0" mnemonicParsing="false" text="Create Playlist" onMouseClicked="#createPlaylist" />
+      <Button layoutX="280.0" layoutY="150.0" mnemonicParsing="false" text="Load Songs" onMouseClicked="#loadSongs" />
+      <ListView fx:id="songListView" layoutX="280.0" layoutY="200.0" prefHeight="300.0" prefWidth="410.0" style="-fx-background-color: black;" />
+      <Button layoutX="280.0" layoutY="520.0" mnemonicParsing="false" text="Play Selected Song" onMouseClicked="#playSelectedSong" />
+      <Slider fx:id="volumeSlider" layoutX="500.0" layoutY="520.0" prefHeight="14.0" prefWidth="111.0" />
+      <Button layoutX="30.0" layoutY="30.0" mnemonicParsing="false" text="Back to Main" onMouseClicked="#goBack" />
+   </children>
 </AnchorPane>

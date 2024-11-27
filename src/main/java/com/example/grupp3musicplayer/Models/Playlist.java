@@ -19,4 +19,7 @@ public class Playlist {
     public ArrayList<Track> getTracks() {
         return tracks;
     }
+    public String getName() {
+        return name;
+    }
 }

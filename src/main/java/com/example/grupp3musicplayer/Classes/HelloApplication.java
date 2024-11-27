@@ -12,7 +12,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/grupp3musicplayer/ViewCollections/MainController.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1080, 720);
+        Scene scene = new Scene(fxmlLoader.load(), 366, 164);
         stage.setTitle("Music Player");
         /* String path = getClass().getResource("/com/musik/Song.mp3").toExternalForm();
         Media media = new Media(path);

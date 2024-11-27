@@ -33,6 +33,7 @@ public class MainController {
 
     @FXML
     void initialize() {
+
         volumeSlider.setValue(0.5);
         volumeSlider.setMin(0);
         volumeSlider.setMax(1);
