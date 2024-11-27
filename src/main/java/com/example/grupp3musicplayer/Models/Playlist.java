@@ -1,4 +1,4 @@
-package com.example.grupp3musicplayer.Classes;
+package com.example.grupp3musicplayer.Models;
 
 import java.util.ArrayList;
 
@@ -18,5 +18,8 @@ public class Playlist {
     }
     public ArrayList<Track> getTracks() {
         return tracks;
+    }
+    public String getName() {
+        return name;
     }
 }
