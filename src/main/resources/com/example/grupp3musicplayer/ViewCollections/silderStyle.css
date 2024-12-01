@@ -1,0 +1,11 @@
+.slider .track {
+    -fx-background-color: grey; /* Remaining part */
+}
+
+.slider .track .filled-track {
+    -fx-background-color: white; /* Filled part */
+}
+
+.slider .thumb {
+    -fx-background-color: green; /* Slider handle */
+}
