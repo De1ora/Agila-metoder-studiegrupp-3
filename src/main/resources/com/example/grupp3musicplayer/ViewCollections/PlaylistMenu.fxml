@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #141414; -fx-border-radius: 5; -fx-border-color: black; -fx-border-width: 5; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grupp3musicplayer.Controllers.PlaylistController">
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #141414; -fx-border-radius: 5; -fx-border-color: black; -fx-border-width: 5; -fx-background-radius: 5;" stylesheets="@silderStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.grupp3musicplayer.Controllers.PlaylistController">
    <children>
 
       <Text fill="#1db954" layoutX="203.0" layoutY="70.0" stroke="#1db954" strokeType="OUTSIDE" text="Playlist Menu">
@@ -23,7 +23,7 @@
       <Button layoutX="280.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#loadSongs" text="Load Songs" />
       <ListView fx:id="songListView" layoutX="280.0" layoutY="200.0" prefHeight="300.0" prefWidth="410.0" style="-fx-background-color: #141414;" />
       <Button layoutX="280.0" layoutY="520.0" mnemonicParsing="false" onMouseClicked="#playSelectedSong" prefWidth="177.0" text="Play Selected Song" />
-      <Slider fx:id="volumeSlider" layoutX="500.0" layoutY="520.0" prefHeight="14.0" prefWidth="111.0" />
+      <Slider fx:id="volumeSlider" layoutX="498.0" layoutY="525.0" prefHeight="14.0" prefWidth="111.0" />
       <Button layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#goBack" text="Back to Main" />
    </children>
 </AnchorPane>

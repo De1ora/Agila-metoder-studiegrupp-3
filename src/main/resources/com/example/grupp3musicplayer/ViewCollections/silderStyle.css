@@ -1,11 +1,22 @@
+/* Grey background for the entire track */
 .slider .track {
-    -fx-background-color: grey; /* Remaining part */
+    -fx-background-color: grey;
 }
 
-.slider .track .filled-track {
-    -fx-background-color: white; /* Filled part */
+/* White filled portion of the track */
+.slider .track .filled {
+    -fx-background-color: white;
 }
 
+/* White slider handle (thumb) */
 .slider .thumb {
-    -fx-background-color: green; /* Slider handle */
+    -fx-background-color: white;
+    -fx-border-width: 1; /* Thin border for contrast */
 }
+/* Removes the default blue outline and replaces it with a green one */
+.button:focused {
+    -fx-border-color: green;
+    -fx-border-width: 2;
+    -fx-background-insets: 0, 1, 2;
+}
+
