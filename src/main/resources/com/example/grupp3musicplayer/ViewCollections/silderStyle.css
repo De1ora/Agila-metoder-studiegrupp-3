@@ -15,7 +15,7 @@
 }
 /* Removes the default blue outline and replaces it with a green one */
 .button:focused {
-    -fx-border-color: green;
+    -fx-border-color: #1db954;
     -fx-border-width: 2;
     -fx-background-insets: 0, 1, 2;
 }
