@@ -1,0 +1,25 @@
+/* Grey background for the entire track */
+.slider .track {
+    -fx-background-color: grey;
+}
+
+/* White filled portion of the track */
+.slider .track .filled {
+    -fx-background-color: white;
+}
+
+
+.slider .thumb {
+    -fx-background-color: white;
+    -fx-border-width: 1;
+}
+/* Removes the default blue outline and replaces it with a green one */
+.button:focused {
+    -fx-border-color: #1db954;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-insets: 0, 1, 2;
+}
+/* Försöker ändra färg på den gula knappen .. lyckas inte */
+
+
